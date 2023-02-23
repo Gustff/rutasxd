@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Rutas Aereas</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet"> 
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="ventana" id="YOSE">
+		<img src="XD1.JPG">
+		<p class="descripcion">1. Aeropuerto Internacional Jorge Chavez </p>
+		<p class="descripcion">2. Aeropuerto Adolfo Suárez </p>
+		<p class="descripcion">3. Aeropuerto Internacional Leonardo da Vinci</p>
+		<p class="descripcion">4. Aeropuerto Internacional Fráncfort del Meno </p>
+		<div id="cerrar"> <a href="javascript:cerrar()"><img src="error.png"></a>
+
+		</div>
+	</div>
+
+	
+	<div class="ventana" id="YOSE1">
+		<img src="XD2.JPG">
+		<p class="descripcion">1. Aeropuerto Internacional Jorge Chavez </p>
+		<p class="descripcion">2. Aeropuerto Afonso Pena </p>
+		<p class="descripcion">3. Aeropuerto Mohammed V International </p>
+		<p class="descripcion">4. Aeropuerto Adolfo Suárez </p>
+		<div id="cerrar"> <a href="javascript:cerrar1()"><img src="error.png"></a>
+
+		</div>
+	</div>
+
+	<div class="ventana" id="YOSE2">
+		<img src="XD3.JPG">
+		<p class="descripcion">1. Aeropuerto Internacional Jorge Chavez </p>
+		<p class="descripcion">2. Aeropuerto Adolfo Suárez </p>
+		<p class="descripcion">3. Aeropuerto Internacional Leonardo da Vinci </p>
+		<div id="cerrar"> <a href="javascript:cerrar2()"><img src="error.png"></a>
+
+		</div>
+	</div>
+
+	<div class="ventana" id="YOSE3">
+		<img src="XD4.JPG">
+		<p class="descripcion">1. Aeropuerto Internacional Jorge Chavez </p>
+		<p class="descripcion">2. Aeropuerto Internacional El Dorado </p>
+		<p class="descripcion">3. Aeropuerto Internacional de Londres Heathrow</p>
+		<div id="cerrar"> <a href="javascript:cerrar3()"><img src="error.png"></a>
+
+		</div>
+	</div>
+
+	<div class="ventana" id="YOSE4">
+		<img src="XD5.JPG">
+		<p class="descripcion">1. Aeropuerto Internacional Jorge Chavez </p>
+		<p class="descripcion">2. Aeropuerto Afonso Pena </p>
+		<p class="descripcion">3. Aeropuerto de Marrakech-Menara</p>
+		<p class="descripcion">4. Aeropuerto de Lisboa </p>
+		<div id="cerrar"> <a href="javascript:cerrar4()"><img src="error.png"></a>
+
+		</div>
+	</div>
+
+    <div class="resolucion">
+        <div class="desktop">
+        </div>
+        <div class="tablet">
+        </div>
+        <div class="movil">
+        </div>
+    </div>
+	
+	<div class="contenedor">
+		<form action="">
+			<div class="selectbox">
+				<div class="select" id="select">
+					<div class="contenido-select">
+						<h2 class="titulo">Seleccione su destino</h2>
+						<p class="descripcion">"Haga un click "</p>
+					</div>
+					<i class="fas fa-angle-down"></i>
+				</div>
+
+				<div class="opciones" id="opciones">
+                    <a href="" class="opcion">
+						<div class="contenido-opcion">
+							<img href="javascript:abrir()" src="alemania.png" alt="javascript:abrir()">
+							<div class="textos">
+								<a href="javascript:abrir()" class="titulo">&nbsp;Alemania</a>
+								<p class="descripcion">&nbsp;&nbsp;Aeropuerto de Fráncfort</p>
+                                <p class="descripcion">&nbsp;&nbsp;del Meno</p>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="opcion">
+						<div class="contenido-opcion">
+							<img src="espana.png" alt="">
+							<div class="textos">
+								<a href="javascript:abrir1()" class="titulo">&nbsp;España</a>
+								<p class="descripcion">&nbsp;&nbsp;Aeropuerto Internacional</p>
+                                <p class="descripcion">&nbsp;&nbsp;Adolfo Suárez</p>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="opcion">
+						<div class="contenido-opcion">
+							<img src="reino-unido.png" alt="">
+							<div class="textos">
+								<a href="javascript:abrir3()" class="titulo">&nbsp;Reino Unido</a>
+								<p class="descripcion">&nbsp;&nbsp;Aeropuerto Internacional</p>
+                                <p class="descripcion">&nbsp;&nbsp;de Londres Heathrow</p>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="opcion">
+						<div class="contenido-opcion">
+							<img src="portugal.png" alt="">
+							<div class="textos">
+								<a href="javascript:abrir4()" class="titulo">&nbsp;Portugal</a>
+								<p class="descripcion">&nbsp;&nbsp;Aeropuerto de Lisboa</p>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="opcion">
+						<div class="contenido-opcion">
+							<img src="italia.png" alt="">
+							<div class="textos">
+								<a href="javascript:abrir2()" class="titulo">&nbsp;italia</a>
+								<p class="descripcion">&nbsp;&nbsp;Aeropuerto Internacional</p>
+                                <p class="descripcion">&nbsp;&nbsp;Leonardo da Vinci</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<input type="hidden" name="pais" id="inputSelect" value="">
+		</form>
+
+	</div>
+	<script>
+		function abrir (){
+	document.getElementById("YOSE").style.display="block";
+    }
+
+	function cerrar (){
+		document.getElementById("YOSE").style.display="none";
+	}
+
+	function abrir1 (){
+	document.getElementById("YOSE1").style.display="block";
+    }
+
+	function cerrar1 (){
+		document.getElementById("YOSE1").style.display="none";
+	}
+
+	function abrir2 (){
+	document.getElementById("YOSE2").style.display="block";
+    }
+
+	function cerrar2 (){
+		document.getElementById("YOSE2").style.display="none";
+	}
+
+	function abrir3 (){
+	document.getElementById("YOSE3").style.display="block";
+    }
+
+	function cerrar3 (){
+		document.getElementById("YOSE3").style.display="none";
+	}
+
+	function abrir4 (){
+	document.getElementById("YOSE4").style.display="block";
+    }
+
+	function cerrar4 (){
+		document.getElementById("YOSE4").style.display="none";
+	}
+	
+const select = document.querySelector('#select');
+const opciones = document.querySelector('#opciones');
+const contenidoSelect = document.querySelector('#select .contenido-select');
+const hiddenInput = document.querySelector('#inputSelect');
+
+document.querySelectorAll('#opciones > .opcion').forEach((opcion) => {
+	opcion.addEventListener('click', (e) => {
+		e.preventDefault();
+		contenidoSelect.innerHTML = e.currentTarget.innerHTML;
+		select.classList.toggle('active');
+		opciones.classList.toggle('active');
+		hiddenInput.value = e.currentTarget.querySelector('.titulo').innerText;
+	});
+});
+
+select.addEventListener('click', () => {
+	select.classList.toggle('active');
+	opciones.classList.toggle('active');
+});
+
+
+
+	</script>
+	
+	
+
+	
+</body>
+</html>
